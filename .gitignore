@@ -1,0 +1,6 @@
+.env
+.env.example
+_pycache_
+migrations
+venv
+django/akshaya_backend/venv

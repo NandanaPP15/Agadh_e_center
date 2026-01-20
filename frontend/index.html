@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Center Integrated with AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-left">
+        <button id="toggleBtn" class="toggle-btn">☰</button>
+        <img src="logo.jpeg" class="logo" alt="Logo">
+        <span class="title">E-Center Integrated with AI</span>
+    </div>
+
+    <div class="lang-toggle">
+        <button class="lang active" id="enBtn">EN</button>
+        <button class="lang" id="malBtn">MAL</button>
+    </div>
+</header>
+
+<!-- SIDE PANEL (SEARCH HISTORY ONLY) -->
+<div class="sidebar" id="sidebar">
+    <h3>Search History</h3>
+    <ul id="historyList">
+        <li>No history yet</li>
+    </ul>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <!-- CHATBOT -->
+    <div class="chatbot">
+        <div class="chat-header">
+            <h3>E-Center Integrated with AI</h3>
+            <p>How can I help you?</p>
+        </div>
+
+        <div class="chat-body" id="chatBody"></div>
+
+        <div class="chat-input">
+            <button id="uploadBtn" title="Upload Document">➕</button>
+            <input type="file" id="fileInput" style="display:none;">
+            <input type="text" id="userInput" placeholder="Type your question...">
+            <button id="micBtn" title="Speak">🎤</button>
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

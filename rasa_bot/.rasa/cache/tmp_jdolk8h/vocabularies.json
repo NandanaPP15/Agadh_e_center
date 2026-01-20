@@ -1,0 +1,49 @@
+{
+  "text": {
+    "voter": 9,
+    "id": 5,
+    "documents": 2,
+    "venam": 8,
+    "apply": 0,
+    "cheyyan": 1,
+    "entha": 3,
+    "വ": 20,
+    "ട": 15,
+    "ടർ": 16,
+    "ഐഡ": 12,
+    "എട": 10,
+    "ക": 13,
+    "ൻ": 21,
+    "എന": 11,
+    "ത": 18,
+    "ര": 19,
+    "ഖകൾ": 14,
+    "ണ": 17,
+    "paper": 7,
+    "needed": 6,
+    "for": 4
+  },
+  "intent": {
+    "voter_id_service": 1,
+    "goodbye": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 7,
+    "action_restart": 8,
+    "action_session_start": 10,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 9,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 11,
+    "action_unlikely_intent": 12,
+    "action_back": 0,
+    "action_extract_slots": 5,
+    "action_fetch_voter_id": 6,
+    "utter_goodbye": 13
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - greet
+  - apply_new_voter_id
+  - provide_age
+  - required_documents
+  - processing_time
+  - correction_voter_id
+  - nlu_fallback
+
+responses:
+
+  utter_greet:
+    - text: |
+        Hello 👋 Welcome to Akshaya Digital Assistant.
+        How can I help you today?
+
+  utter_apply_new_voter_id:
+    - text: |
+        Sure 😊 I can help you with new Voter ID registration.
+        📌 First, may I know your age?
+
+  utter_age_eligible:
+    - text: |
+        Great 🎉 You are eligible to apply for a Voter ID.
+
+  utter_documents:
+    - text: |
+        You will need the following documents 📄
+        1️⃣ Aadhaar Card / Passport / PAN Card
+        2️⃣ Address proof (Aadhaar, utility bill, bank passbook, etc.)
+        3️⃣ Passport-size photo
+        4️⃣ Mobile number
+
+  utter_processing_time:
+    - text: |
+        It usually takes 15–30 days, after verification by the Booth Level Officer (BLO).
+
+  utter_correction:
+    - text: |
+        No problem 😊
+        You can correct details using Form 8:
+        ✔ Name
+        ✔ Address
+        ✔ Date of Birth
+        ✔ Photo
+
+  utter_fallback:
+    - text: |
+        Sorry 😅 I didn’t understand.
+        Are you asking about:
+        👉 New Voter ID
+        👉 Documents
+        👉 Correction

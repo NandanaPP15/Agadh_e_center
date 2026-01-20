@@ -1,0 +1,47 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+
+- intent: apply_new_voter_id
+  examples: |
+    - i want voter id
+    - voter id apply
+    - new voter registration
+    - voter id venam
+    - first time voter
+
+- intent: provide_age
+  examples: |
+    - 18
+    - i am 18
+    - age is 19
+
+- intent: required_documents
+  examples: |
+    - documents
+    - documents?
+    - what documents are needed
+    - aadhaar needed
+    - proof venam
+    - documents entha
+
+- intent: processing_time
+  examples: |
+    - how many days
+    - time taken
+    - how long it takes
+
+- intent: correction_voter_id
+  examples: |
+    - name wrong
+    - address change
+    - correction in voter id
+    - name change cheyyanam
+
+- intent: nlu_fallback

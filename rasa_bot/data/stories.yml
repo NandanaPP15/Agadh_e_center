@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories:
+
+- story: greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: voter id documents flow
+  steps:
+    - intent: apply_new_voter_id
+    - action: utter_apply_new_voter_id
+    - intent: required_documents
+    - action: action_get_voter_documents

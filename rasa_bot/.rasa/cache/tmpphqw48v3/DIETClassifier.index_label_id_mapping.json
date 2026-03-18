@@ -1,0 +1,14 @@
+{
+  "0": "address_change",
+  "1": "apply_new_voter_id",
+  "2": "correction_voter_id",
+  "3": "fee_query",
+  "4": "form_required",
+  "5": "greet",
+  "6": "lost_voter_id",
+  "7": "online_apply",
+  "8": "processing_time",
+  "9": "provide_age",
+  "10": "required_documents",
+  "11": "thank_you"
+}

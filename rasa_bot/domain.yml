@@ -2,54 +2,55 @@ version: "3.1"
 
 intents:
   - greet
-  - apply_new_voter_id
-  - provide_age
-  - required_documents
-  - processing_time
-  - correction_voter_id
-  - nlu_fallback
+  - goodbye
+  - thank_you
+  - ask_documents
+  - ask_services
+  - ask_process
+  - ask_fee
+  - out_of_scope
+
+entities:
+  - service_type
+
+slots:
+  service_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: service_type
 
 responses:
-
   utter_greet:
-    - text: |
-        Hello 👋 Welcome to Akshaya Digital Assistant.
-        How can I help you today?
-
-  utter_apply_new_voter_id:
-    - text: |
-        Sure 😊 I can help you with new Voter ID registration.
-        📌 First, may I know your age?
-
-  utter_age_eligible:
-    - text: |
-        Great 🎉 You are eligible to apply for a Voter ID.
-
-  utter_documents:
-    - text: |
-        You will need the following documents 📄
-        1️⃣ Aadhaar Card / Passport / PAN Card
-        2️⃣ Address proof (Aadhaar, utility bill, bank passbook, etc.)
-        3️⃣ Passport-size photo
-        4️⃣ Mobile number
-
-  utter_processing_time:
-    - text: |
-        It usually takes 15–30 days, after verification by the Booth Level Officer (BLO).
-
-  utter_correction:
-    - text: |
-        No problem 😊
-        You can correct details using Form 8:
-        ✔ Name
-        ✔ Address
-        ✔ Date of Birth
-        ✔ Photo
-
+  - text: "Hello! Welcome to Agadh e-Center Digitization. How can I help you with government services today?"
+  - text: "Hi there! I'm your Agadh assistant. What service do you need help with?"
+  - text: "Namaskaram! Welcome to Agadh. How can I assist you today?"
+  
+  utter_goodbye:
+  - text: "Goodbye! Have a great day."
+  - text: "Thank you for using Agadh. See you again!"
+  - text: "Farewell! Please visit again if you need assistance."
+  
+  utter_thank_you:
+  - text: "You're welcome! Is there anything else I can help you with?"
+  - text: "Happy to help! Let me know if you need anything else."
+  
+  utter_ask_services:
+  - text: "I can help you with these government services:\n1. Ration Card Services\n2. Marriage Registration\n3. Police Clearance Certificate\n4. PAN Card Services\n5. Birth Certificate Services\n6. Passport Services\n7. Aadhaar Services\n8. Death Registration Services\n9. Non-Creamy Layer Certificate\n\nWhich service are you interested in?"
+  
+  utter_ration_card_docs:
+  - text: "📋 **Documents Required for Ration Card:**\n\n**1. Identity Proof (Head of Family):**\n• Aadhaar Card\n• Voter ID\n• Passport\n• Driving License\n\n**2. Address Proof:**\n• Electricity/Water Bill (last 3 months)\n• House Tax Receipt\n• Rent Agreement\n\n**3. Family Member Proof:**\n• Aadhaar of all family members\n• Birth Certificates (for children)\n\n**4. Income Proof:**\n• Income Certificate\n• Salary Certificate\n\n**5. Additional:**\n• Passport-size photograph\n\n⏱️ **Processing Time:** 7-10 working days\n💰 **Fee:** ₹50"
+  
+  utter_passport_docs:
+  - text: "📋 **Documents Required for Passport:**\n\n**1. Proof of Date of Birth:**\n• Birth Certificate\n• SSLC Certificate\n\n**2. Address Proof:**\n• Aadhaar Card\n• Voter ID\n• Utility Bills\n\n**3. Identity Proof:**\n• PAN Card\n• Driving License\n\n**4. Additional Documents:**\n• Educational Certificates\n• Previous Passport (for renewal)\n\n⏱️ **Processing Time:** 20-30 working days\n💰 **Fee:** ₹1500"
+  
+  utter_aadhaar_docs:
+  - text: "📋 **Documents Required for Aadhaar:**\n\n**1. Proof of Identity:**\n• PAN Card\n• Passport\n• Driving License\n• Voter ID\n\n**2. Proof of Address:**\n• Utility Bill (last 3 months)\n• Bank Statement\n\n**3. Proof of Date of Birth:**\n• Birth Certificate\n• SSLC Certificate\n\n**For Children (below 5 years):**\n• Birth Certificate\n• Parent's Aadhaar\n\n⏱️ **Processing Time:** 15-20 working days\n💰 **Fee:** Free"
+  
   utter_fallback:
-    - text: |
-        Sorry 😅 I didn’t understand.
-        Are you asking about:
-        👉 New Voter ID
-        👉 Documents
-        👉 Correction
+  - text: "I can help you with government services. You can ask me about:\n1. Document requirements\n2. Application process\n3. Fees\n4. Service centers\n\nTry asking: 'What documents are needed for ration card?'"
+
+actions:
+  - action_greet
+  - action_get_service_documents
+  - action_fallback

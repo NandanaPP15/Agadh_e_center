@@ -1,47 +1,68 @@
 version: "3.1"
 
 nlu:
-
 - intent: greet
   examples: |
-    - hi
     - hello
+    - hi
     - hey
+    - good morning
+    - good afternoon
+    - good evening
+    - namaskaram
+    - ഹലോ
+    - നമസ്കാരം
 
-- intent: apply_new_voter_id
+- intent: goodbye
   examples: |
-    - i want voter id
-    - voter id apply
-    - new voter registration
-    - voter id venam
-    - first time voter
+    - goodbye
+    - bye
+    - see you
+    - see you later
+    - take care
+    - bye bye
 
-- intent: provide_age
+- intent: thank_you
   examples: |
-    - 18
-    - i am 18
-    - age is 19
+    - thank you
+    - thanks
+    - thank you very much
+    - thanks a lot
+    - നന്ദി
+    - ധന്യവാദം
 
-- intent: required_documents
+- intent: ask_documents
   examples: |
-    - documents
-    - documents?
-    - what documents are needed
-    - aadhaar needed
-    - proof venam
-    - documents entha
+    - what documents are required
+    - what do I need to apply
+    - required documents
+    - what papers do I need
+    - document checklist
+    - എന്ത് ഡോക്കുമെന്റുകൾ വേണം
+    - ആവശ്യമായ ഡോക്കുമെന്റുകൾ
+    - what documents for ration card
+    - ration card documents
+    - passport documents required
+    - aadhaar documents needed
+    - what do I need for pan card
+    - documents for marriage registration
+    - what is required for police clearance
 
-- intent: processing_time
+- intent: ask_services
   examples: |
-    - how many days
-    - time taken
-    - how long it takes
+    - what services do you provide
+    - what are the available services
+    - tell me about government services
+    - what can you help me with
+    - services available
+    - സേവനങ്ങൾ എന്തെല്ലാം ഉണ്ട്
+    - എന്ത് സേവനങ്ങളാണ് ലഭ്യം
 
-- intent: correction_voter_id
+- intent: out_of_scope
   examples: |
-    - name wrong
-    - address change
-    - correction in voter id
-    - name change cheyyanam
-
-- intent: nlu_fallback
+    - what is the weather
+    - tell me a joke
+    - who is the president
+    - what time is it
+    - how old are you
+    - what is your name

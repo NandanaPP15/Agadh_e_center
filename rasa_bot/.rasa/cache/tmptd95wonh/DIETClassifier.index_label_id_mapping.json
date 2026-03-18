@@ -1,0 +1,18 @@
+{
+  "0": "connect_employee",
+  "1": "goodbye",
+  "2": "greet",
+  "3": "out_of_scope",
+  "4": "passport_info",
+  "5": "thank_you",
+  "6": "voter_id_aadhaar",
+  "7": "voter_id_apply",
+  "8": "voter_id_correction",
+  "9": "voter_id_documents",
+  "10": "voter_id_fee",
+  "11": "voter_id_form",
+  "12": "voter_id_info",
+  "13": "voter_id_lost",
+  "14": "voter_id_processing_time",
+  "15": "voter_id_status"
+}

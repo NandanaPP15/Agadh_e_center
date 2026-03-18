@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agadh - e-Center Digitization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e4a8b 0%, #0d2b5e 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            color: #e8c96a;
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .status-box {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #d4af37;
+            color: #0d2b5e;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+            background: #e8c96a;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">AGADH</div>
+        <div class="subtitle">e-Center Digitization</div>
+        
+        <div class="content">
+            <h1>Kerala Government Service Assistance Platform</h1>
+            <p>Integrated with Akshaya centers using Django, Rasa, NLP, and LLM-style intelligence</p>
+            
+            <div class="status-box">
+                <h2>System Status</h2>
+                <p>✅ Backend Server: Running</p>
+                <p>✅ Database: Connected</p>
+                <p>✅ Chatbot: Ready</p>
+                <p>✅ Frontend: Active</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>🎯 9 Government Services</h3>
+                    <p>Ration Card, Marriage Registration, Police Clearance, PAN Card, Birth Certificate, Passport, Aadhaar, Death Registration, NCL Certificate</p>
+                </div>
+                <div class="feature">
+                    <h3>🤖 AI Chatbot</h3>
+                    <p>Intelligent assistant for service queries in English and Malayalam</p>
+                </div>
+                <div class="feature">
+                    <h3>👥 Employee Directory</h3>
+                    <p>Find Akshaya center employees in Kozhikode</p>
+                </div>
+                <div class="feature">
+                    <h3>📄 Document Requirements</h3>
+                    <p>Detailed document checklists for all services</p>
+                </div>
+            </div>
+            
+            <div style="margin: 2rem 0;">
+                <a href="/services/" class="button">Browse Services</a>
+                <a href="/chatbot/" class="button">Chat with Assistant</a>
+                <a href="/employees/" class="button">Find Employees</a>
+                <a href="/admin/" class="button">Admin Panel</a>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <h3>Quick Links</h3>
+                <p>
+                    <a href="/api/services/" style="color: #e8c96a; margin: 0 1rem;">Services API</a> |
+                    <a href="/api/employees/" style="color: #e8c96a; margin: 0 1rem;">Employees API</a> |
+                    <a href="/api/documents/" style="color: #e8c96a; margin: 0 1rem;">Documents API</a> |
+                    <a href="/swagger/" style="color: #e8c96a; margin: 0 1rem;">API Docs</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 Agadh e-Center Digitization. Government of Kerala - Akshaya Initiative</p>
+            <p>For support: support@agadh.kerala.gov.in | Phone: +91 1234567890</p>
+        </div>
+    </div>
+</body>
+</html>

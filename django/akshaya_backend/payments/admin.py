@@ -1,3 +1,6 @@
-from django.contrib import admin
+"""
+THIS FILE IS INTENTIONALLY KEPT EMPTY FOR PHASE 1
+Payments module will be implemented in Phase 2
+"""
 
-# Register your models here.
+# Payment models will be added in Phase 2

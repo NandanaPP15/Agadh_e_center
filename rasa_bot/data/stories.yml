@@ -1,15 +1,25 @@
 version: "3.1"
 
 stories:
-
-- story: greet user
+- story: greet and ask documents
   steps:
-    - intent: greet
-    - action: utter_greet
+  - intent: greet
+  - action: action_greet
+  - intent: ask_documents
+  - action: action_get_service_documents
+  - intent: thank_you
+  - action: utter_thank_you
 
-- story: voter id documents flow
+- story: ask services directly
   steps:
-    - intent: apply_new_voter_id
-    - action: utter_apply_new_voter_id
-    - intent: required_documents
-    - action: action_get_voter_documents
+  - intent: ask_services
+  - action: utter_ask_services
+  - intent: ask_documents
+  - action: action_get_service_documents
+
+- story: simple greeting
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: goodbye
+  - action: utter_goodbye

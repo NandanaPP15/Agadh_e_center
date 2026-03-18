@@ -1,0 +1,14 @@
+{
+  "0": "affirm",
+  "1": "apply_new_voter_id",
+  "2": "connect_employee",
+  "3": "correction_voter_id",
+  "4": "deny",
+  "5": "greet",
+  "6": "lost_voter_id",
+  "7": "nlu_fallback",
+  "8": "processing_time",
+  "9": "provide_age",
+  "10": "required_documents",
+  "11": "required_form"
+}

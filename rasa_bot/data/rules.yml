@@ -1,38 +1,32 @@
 version: "3.1"
 
 rules:
-
-- rule: Greet user
+- rule: Say goodbye anytime the user says goodbye
   steps:
-    - intent: greet
-    - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
 
-- rule: Start voter id flow
+- rule: Say 'You are welcome' when the user says thank you
   steps:
-    - intent: apply_new_voter_id
-    - action: utter_apply_new_voter_id
+  - intent: thank_you
+  - action: utter_thank_you
 
-- rule: Age provided
+- rule: Greet the user
   steps:
-    - intent: provide_age
-    - action: utter_age_eligible
+  - intent: greet
+  - action: action_greet
 
-- rule: Show documents
+- rule: Provide service information
   steps:
-    - intent: required_documents
-    - action: utter_documents
+  - intent: ask_services
+  - action: utter_ask_services
 
-- rule: Processing time
+- rule: Handle document inquiries
   steps:
-    - intent: processing_time
-    - action: utter_processing_time
+  - intent: ask_documents
+  - action: action_get_service_documents
 
-- rule: Correction flow
+- rule: Fallback for out of scope
   steps:
-    - intent: correction_voter_id
-    - action: utter_correction
-
-- rule: Fallback
-  steps:
-    - intent: nlu_fallback
-    - action: utter_fallback
+  - intent: out_of_scope
+  - action: action_fallback
